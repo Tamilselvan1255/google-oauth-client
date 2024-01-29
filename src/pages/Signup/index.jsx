@@ -8,6 +8,13 @@ function Signup() {
 			"_self"
 		);
 	};
+
+	const facebookAuth = () => {
+        window.open(
+            `${process.env.REACT_APP_API_URL}/auth/facebook`,
+            "_self"
+        );
+    };
 	return (
 		<div className={styles.container}>
 			<h1 className={styles.heading}>Sign up Form</h1>
